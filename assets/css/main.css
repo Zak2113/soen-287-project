@@ -1,0 +1,11 @@
+.nav-index{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-button{
+    background-color: rgb(157, 124, 151);
+    border-radius: 15px;
+}
