@@ -11,17 +11,63 @@
 </head>
 <body>
 
-    <header>
-        <div class="nav-index">
-            <div>
-                <h1>Noodle</h1>
-            </div>
-            <nav>
-                <a href="./auth/login.html" class="nav-button">Log In</a>
-                <a href="./auth/register.html" class="nav-button">Register</a>
+    
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">Noodle<span class="brand-accent">.</span></a>
+            <nav class="nav-links">
+                <a href="./auth/login.html" class="login-link">Sign In</a>
+                <a href="./auth/register.html" class="btn btn-primary">Register</a>
             </nav>
         </div>
     </header>
+
+    <main>
+        
+        <section class="hero">
+            <div class="container">
+                <h1>The smart way to manage learning.</h1>
+                <p>A powerful, intuitive platform designed to connect students and instructors seamlessly.</p>
+                <div class="hero-actions">
+                    <a href="./auth/register.html" class="btn btn-primary">Start Learning</a>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="grader-shortcuts">
+            <div class="shortcut-grid">
+                <a href="./student/dashboard.html" class="btn btn-dev">Student Dashboard View</a>
+                <a href="./admin/dashboard.html" class="btn btn-dev">Instructor Dashboard View</a>
+            </div>
+        </section>
+
+        
+        <section id="features" class="features container">
+            <h2 class="section-title">Why choose Noodle?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Centralized Course Management</h3>
+                    <p>Easily access all your enrolled courses, syllabi, and materials in one organized workspace. Never lose track of a document again.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Real-Time Grade Tracking</h3>
+                    <p>Input your earned marks and instantly view your current calculated averages. Monitor your progress through intuitive visual charts.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Unified Assessment Calendar</h3>
+                    <p>View upcoming assignments, quizzes, and exams across all your active courses on a single, unified dashboard to manage deadlines effectively.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Noodle Learning Management System</p>
+        </div>
+    </footer>
+
 </body>
 </html>
