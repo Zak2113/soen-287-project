@@ -13,6 +13,7 @@
     
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
 </head>
 <body>
 
@@ -61,7 +62,100 @@
                 </div>
 
                 
-                
+                <div class="dashboard-grid">
+                    
+                    <!-- LEFT COLUMN: My Courses Grid -->
+                    <section class="courses-section">
+                        <div class="section-header">
+                            <h3>Enrolled Courses</h3>
+                            <a href="./add-course.html" class="btn btn-outline btn-sm">Add Course</a>
+                        </div>
+                        
+                        <div class="course-cards">
+                            <!-- Course Card 1 -->
+                            <div class="course-card">
+                                <div class="course-card-header">
+                                    <span class="course-code">SOEN 287 S</span>
+                                    <span class="course-term">Winter 2026</span>
+                                </div>
+                                <h4 class="course-title">Web Development</h4>
+                                <p class="course-instructor">Prof. Mohammad Bashar</p>
+                                
+                                <div class="course-progress">
+                                    <div class="progress-info">
+                                        <span>Current Average</span>
+                                        <strong>92%</strong>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 92%;"></div>
+                                    </div>
+                                </div>
+                                
+                                <a href="course.html" class="btn btn-outline btn-block">View Course</a>
+                            </div>
+
+                            <!-- Course Card 2 -->
+                            <div class="course-card">
+                                <div class="course-card-header">
+                                    <span class="course-code">COMP 233</span>
+                                    <span class="course-term">Winter 2026</span>
+                                </div>
+                                <h4 class="course-title">Probability & Statistics</h4>
+                                <p class="course-instructor">Prof. Thomas Fevens</p>
+                                
+                                <div class="course-progress">
+                                    <div class="progress-info">
+                                        <span>Current Average</span>
+                                        <strong>85%</strong>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                
+                                <a href="course.html" class="btn btn-outline btn-block">View Course</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- RIGHT COLUMN: Upcoming Assessments List -->
+                    <section class="assessments-section">
+                        <div class="section-header">
+                            <h3>Upcoming Deadlines</h3>
+                            <a href="#" class="btn btn-outline btn-sm">Calendar</a>
+                        </div>
+                        
+                        <div class="assessment-list">
+                            <!-- Assessment Item 1 -->
+
+                            <div class="assessment-item">
+                                <div class="assessment-date">
+                                    <span class="month">FEB</span>
+                                    <span class="day">23</span>
+                                </div>
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Problem Set 3</h5>
+                                    <span class="assessment-course">COMP 233</span>
+                                </div>
+                                <span class="status-badge status-pending">Late</span>
+                            </div>
+
+                            <div class="assessment-item">
+                                <div class="assessment-date">
+                                    <span class="month">FEB</span>
+                                    <span class="day">27</span>
+                                </div>
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">SOEN 287 Project - Deliverable 1</h5>
+                                    <span class="assessment-course">SOEN 287</span>
+                                </div>
+                                <span class="status-badge status-due-soon">Due Soon</span>
+                            </div>
+
+                            <!-- Assessment Item 2 -->
+                            
+                        </div>
+                    </section>
 
             </main>
         </div>
