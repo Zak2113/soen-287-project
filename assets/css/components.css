@@ -12,6 +12,14 @@
     align-items: start;
 }
 
+.dashboard-grade {
+    display: grid;
+    width: 100%;
+    align-items: start;
+    gap: 2rem;
+    direction: column;
+}
+
 @media (max-width: 1024px) {
     .dashboard-grid {
         grid-template-columns: 1fr; 
