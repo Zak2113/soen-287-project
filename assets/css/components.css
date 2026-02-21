@@ -212,6 +212,11 @@
     color: #92400e;
 }
 
+.status-graded {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
 .add-course-card {
     background-color: var(--white);
     width: 100%;
@@ -220,4 +225,43 @@
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border: 1px solid var(--border-color);
+}
+
+/* --- GRADES SPECIFIC --- */
+.grades-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.grades-divider {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 1.5rem 0;
+}
+
+.grades-subtitle {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+
+
+.assessment-grade {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.assessment-grade strong {
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+}
+
+.assessment-grade span {
+    font-size: 0.75rem;
+    color: var(--text-muted);
 }

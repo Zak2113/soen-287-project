@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grades</title>
+    <title>My Grades</title>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
 
     <div class="app-layout">
 
@@ -43,7 +42,7 @@
         <!-- RIGHT: Main Content Area -->
         <div class="main-wrapper">
 
-            <!-- Top Header for User Info -->
+
             <header class="top-header">
                 <div class="header-title">Student Portal</div>
 
@@ -60,11 +59,13 @@
 
                 <div class="dashboard-header">
                     <h2>My Grades</h2>
-
+                    <p>Review your completed assessments and current standing across all enrolled courses.</p>
                 </div>
 
+                <!-- Main Grades Container -->
+                <div class="grades-container">
 
-                <div class="dashboard-grade">
+                    <!-- Course 1: Web Development -->
                     <div class="course-card">
                         <div class="course-card-header">
                             <span class="course-code">SOEN 287 S</span>
@@ -75,37 +76,195 @@
 
                         <div class="course-progress">
                             <div class="progress-info">
-                                <span>Current Average</span>
-                                <strong>92%</strong>
+                                <span>Progress</span>
+                                <strong>55%</strong>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 92%;"></div>
+                                <div class="progress-fill" style="width: 55%;"></div>
                             </div>
                         </div>
 
-                        
+                        <!-- Divider separating course info from grades list -->
+                        <hr class="grades-divider">
+                        <h5 class="grades-subtitle">Completed Assessments</h5>
+
+                        <div class="assessment-list">
+                            <!-- Assessment Item 1 -->
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Course Project - Deliverable 1</h5>
+                                    <span class="assessment-course">Weight: 10%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>95 / 100</strong>
+                                    <span>95%</span>
+                                </div>
+                                <span class="status-badge status-graded">Graded</span>
+                            </div>
+
+                            <!-- Assessment Item 2 -->
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Midterm Exam</h5>
+                                    <span class="assessment-course">Weight: 30%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>91 / 100</strong>
+                                    <span>91%</span>
+                                </div>
+                                <span class="status-badge status-graded">Graded</span>
+                            </div>
+                        </div>
+
+                        <hr class="grades-divider">
+                        <h5 class="grades-subtitle">Incomplete Assessments</h5>
+
+                        <div class="assessment-list">
+                            <!-- Assessment Item 1 -->
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Course Project - Deliverable 2</h5>
+                                    <span class="assessment-course">Weight: 10%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>-- / 100</strong>
+                                    <span>--%</span>
+                                </div>
+                                <span class="status-badge status-due-soon">Ungraded</span>
+                            </div>
+
+                            <!-- Assessment Item 2 -->
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Final Exam</h5>
+                                    <span class="assessment-course">Weight: 50%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>-- / 100</strong>
+                                    <span>--%</span>
+                                </div>
+                                <span class="status-badge status-due-soon">Ungraded</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="dashboard-grade">
+                    
                     <div class="course-card">
                         <div class="course-card-header">
-                            <span class="course-code">SOEN 287 S</span>
+                            <span class="course-code">COMP 233 S</span>
                             <span class="course-term">Winter 2026</span>
                         </div>
-                        <h4 class="course-title">Web Development</h4>
-                        <p class="course-instructor">Prof. Mohammad Bashar</p>
+                        <h4 class="course-title">Probability & Statistics</h4>
+                        <p class="course-instructor">Prof. Thomas Fevens</p>
 
                         <div class="course-progress">
                             <div class="progress-info">
-                                <span>Current Average</span>
-                                <strong>92%</strong>
+                                <span>Progress</span>
+                                <strong>56%</strong>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 92%;"></div>
+                                <div class="progress-fill" style="width: 56%;"></div>
                             </div>
                         </div>
 
-                        
+                        <!-- Divider separating course info from grades list -->
+                        <hr class="grades-divider">
+                        <h5 class="grades-subtitle">Completed Assessments</h5>
+
+                        <div class="assessment-list">
+                            <!-- Assessment Item 1 -->
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Assignment 1</h5>
+                                    <span class="assessment-course">Weight: 2.5%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>95 / 100</strong>
+                                    <span>95%</span>
+                                </div>
+                                <span class="status-badge status-graded">Graded</span>
+                            </div>
+
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Assignment 2</h5>
+                                    <span class="assessment-course">Weight: 2.5%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>65 / 100</strong>
+                                    <span>65%</span>
+                                </div>
+                                <span class="status-badge status-graded">Graded</span>
+                            </div>
+
+                            <!-- Assessment Item 2 -->
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Midterm Exam</h5>
+                                    <span class="assessment-course">Weight: 30%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>91 / 100</strong>
+                                    <span>91%</span>
+                                </div>
+                                <span class="status-badge status-graded">Graded</span>
+                            </div>
+                        </div>
+
+                        <hr class="grades-divider">
+                        <h5 class="grades-subtitle">Incomplete Assessments</h5>
+
+                        <div class="assessment-list">
+
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Assignment 3</h5>
+                                    <span class="assessment-course">Weight: 2.5%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>-- / 100</strong>
+                                    <span>--%</span>
+                                </div>
+                                <span class="status-badge status-due-soon">Ungraded</span>
+                            </div>
+                            <!-- Assessment Item 1 -->
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Assignment 4</h5>
+                                    <span class="assessment-course">Weight: 2.5%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>-- / 100</strong>
+                                    <span>--%</span>
+                                </div>
+                                <span class="status-badge status-due-soon">Ungraded</span>
+                            </div>
+
+                            <!-- Assessment Item 2 -->
+                            <div class="assessment-item">
+
+                                <div class="assessment-details">
+                                    <h5 class="assessment-title">Final Exam</h5>
+                                    <span class="assessment-course">Weight: 60%</span>
+                                </div>
+                                <div class="assessment-grade">
+                                    <strong>-- / 100</strong>
+                                    <span>--%</span>
+                                </div>
+                                <span class="status-badge status-due-soon">Ungraded</span>
+                            </div>
+
+                            
+                        </div>
                     </div>
 
                 </div>
