@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analytics</title>
+    <title>Manage Course - Noodle LMS</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/components.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
 </head>
+
 <body>
-    
+
+    <div class="app-layout">
+
+        <!-- LEFT: Sidebar (Admin Context) -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../index.html" class="brand-logo">Noodle<span class="brand-accent">.</span></a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">Dashboard</a>
+                <a href="create-course.html" class="nav-item">Create Course</a>
+                <a href="analytics.html" class="nav-item active">Analytics</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="../auth/login.html" class="nav-item">Log Out</a>
+            </div>
+        </aside>
+
+        <!-- RIGHT: Main Content Area -->
+        <div class="main-wrapper">
+
+            <header class="top-header">
+                <div class="header-title">Admin Portal</div>
+
+                <div class="user-profile">
+                    <span class="user-name">Admin User</span>
+                    <div class="user-avatar">
+                        <a href="./profile.html">AU</a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="content-area">
+            </main>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
