@@ -1,15 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Users</title>
+    <title>Manage Course - Noodle LMS</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/components.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
 </head>
+
 <body>
-    
+
+    <div class="app-layout">
+
+        <!-- LEFT: Sidebar (Admin Context) -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../index.html" class="brand-logo">Noodle<span class="brand-accent">.</span></a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active">Dashboard</a>
+                <a href="create-course.html" class="nav-item">Create Course</a>
+                <a href="analytics.html" class="nav-item">Analytics</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="../auth/login.html" class="nav-item">Log Out</a>
+            </div>
+        </aside>
+
+        <!-- RIGHT: Main Content Area -->
+        <div class="main-wrapper">
+
+            <header class="top-header">
+                <div class="header-title">Instructor Portal</div>
+
+                <div class="user-profile">
+                    <span class="user-name">Admin User</span>
+                    <div class="user-avatar">AU</div>
+                </div>
+            </header>
+
+            <main class="content-area">
+
+                <div class="form-group">
+                    <a href="dashboard.html" class="login-link">← Back to Dashboard</a>
+                </div>
+
+                <div class="dashboard-header flex-between">
+                    <div>
+                        <h2>Manage: Web Development <span class="course-code">SOEN 287</span></h2>
+                        <p>Fall 2026 - 45 Students Enrolled</p>
+                    </div>
+                    <button class="btn btn-outline">Disable Course</button>
+                </div>
+
+                <!-- Add New Assessment Form -->
+                <section class="profile-section">
+                    <div class="section-header">
+                        <h3>Define Assessment Structure</h3>
+                    </div>
+
+
+                    <form action="#" class="nav-links">
+                        <input type="text" class="form-control" placeholder="Assessment Name (e.g. Midterm)" required>
+                        <input type="number" class="form-control" placeholder="Weight (%)" required>
+
+
+                        <select id="role" class="form-control" required>
+                            <option value="" disabled selected hidden>Assessment Type</option>
+                            <option value="student">Quiz</option>
+                            <option value="student">Assignment</option>
+                            <option value="student">Lab</option>
+                            <option value="student">Project</option>
+                            <option value="admin">Midterm Exam</option>
+                            <option value="admin">Final Exam</option>
+                        </select>
+
+                        <input type="date" class="form-control" required>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </section>
+
+                <div class="section-header">
+                    <h3>Current Syllabus Items</h3>
+                </div>
+
+
+                <div class="assessment-list">
+
+                    <div class="assessment-item">
+                        <div class="assessment-date">
+                            <span class="month">Oct</span>
+                            <span class="day">14</span>
+                        </div>
+                        <div class="assessment-details">
+                            <h5 class="assessment-title">Firewall Configuration Lab</h5>
+                            <span class="assessment-course">Weight: 20%</span>
+                        </div>
+
+
+                        <div class="nav-links">
+                            <button class="btn btn-outline btn-sm">Edit</button>
+                            <button class="btn btn-outline btn-sm">Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="assessment-item">
+                        <div class="assessment-date">
+                            <span class="month">Nov</span>
+                            <span class="day">05</span>
+                        </div>
+                        <div class="assessment-details">
+                            <h5 class="assessment-title">Final Project Proposal</h5>
+                            <span class="assessment-course">Weight: 15%</span>
+                        </div>
+
+                        <div class="nav-links">
+                            <button class="btn btn-outline btn-sm">Edit</button>
+                            <button class="btn btn-outline btn-sm">Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="assessment-item">
+                        <div class="assessment-date">
+                            <span class="month">Dec</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="assessment-details">
+                            <h5 class="assessment-title">Final Exam</h5>
+                            <span class="assessment-course">Weight: 65%</span>
+                        </div>
+
+                        <div class="nav-links">
+                            <button class="btn btn-outline btn-sm">Edit</button>
+                            <button class="btn btn-outline btn-sm">Delete</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
