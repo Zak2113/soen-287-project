@@ -1,15 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Course</title>
+    <title>Add Course</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/components.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
 </head>
+
 <body>
-    
+
+
+    <div class="app-layout">
+
+        <!-- LEFT: Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../index.html" class="brand-logo">Noodle<span class="brand-accent">.</span></a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">Dashboard</a>
+                <a href="create-course.html" class="nav-item active">Create Course</a>
+                <a href="analytics.html" class="nav-item">Analytics</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="../auth/login.html" class="nav-item">Log Out</a>
+            </div>
+        </aside>
+
+        <!-- RIGHT: Main Content Area -->
+        <div class="main-wrapper">
+
+            <!-- Top Header for User Info -->
+            <header class="top-header">
+                <div class="header-title">Admin Portal</div>
+
+                <div class="user-profile">
+                    <span class="user-name">Admin User</span>
+                    <div class="user-avatar">
+                        <a href="./profile.html">AU</a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Actual Page Content Goes Here -->
+            <main class="content-area">
+
+                <div class="dashboard-header">
+                    <h2>Create a Course</h2>
+
+                </div>
+
+
+                <div class="dashboard-form">
+
+
+                    <div class="add-course-card">
+                        <form action="../admin/course.html" method="GET">
+
+                            <div class="form-group">
+                                <label for="instructor" class="form-label">Instructor</label>
+                                <input type="Instructor" class="form-control" placeholder="Admin User" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="term" class="form-label">Term</label>
+                                <select id="role" class="form-control" required>
+                                    <option value="term">Winter 2026</option>
+                                    <option value="term">Summer 2026</option>
+                                    <option value="term">Fall 2026</option>
+                                    <option value="term">Winter 2027</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="course-code" class="form-label">Course Code</label>
+                                <input type="course-code" class="form-control" placeholder="ABCX-9990" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="course-name" class="form-label">Course Name</label>
+                                <input type="course-name" class="form-control" placeholder="Course Name" required>
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <label for="course-name" class="form-label">Course Description</label>
+                                <input type="course-name" class="form-control" placeholder="Course Description" required>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+
+
+                    </div>
+
+
+
+            </main>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
