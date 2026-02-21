@@ -1,15 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/components.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
 </head>
+
 <body>
-    
+
+
+    <div class="app-layout">
+
+        <!-- LEFT: Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../index.html" class="brand-logo">Noodle<span class="brand-accent">.</span></a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active">Dashboard</a>
+                <a href="create-course.html" class="nav-item">Create Course</a>
+                <a href="analytics.html" class="nav-item">Analytics</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="../auth/login.html" class="nav-item">Log Out</a>
+            </div>
+        </aside>
+
+        <!-- RIGHT: Main Content Area -->
+        <div class="main-wrapper">
+
+            <!-- Top Header for User Info -->
+            <header class="top-header">
+                <div class="header-title">Admin Portal</div>
+
+                <div class="user-profile">
+                    <span class="user-name">Admin User</span>
+                    <div class="user-avatar">
+                        <a href="./profile.html">AU</a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Actual Page Content Goes Here -->
+            <main class="content-area">
+
+                <div class="dashboard-header">
+                    <h2>Welcome back, Admin!</h2>
+                    <p>Manage the courses you teach.</p>
+                </div>
+
+
+                <div class="dashboard-grade">
+
+                    <!-- LEFT COLUMN: My Courses Grid -->
+                    <section class="courses-section">
+                        <div class="section-header">
+                            <h3>Enabled Courses</h3>
+                            <a href="./create-course.html" class="btn btn-outline btn-sm">New Course</a>
+                        </div>
+
+                        <div class="course-cards">
+                            <!-- Course Card 1 -->
+                            <div class="course-card">
+                                <div class="course-card-header">
+                                    <span class="course-code">SOEN 287 S</span>
+                                    <span class="course-term">Winter 2026</span>
+                                </div>
+                                <h4 class="course-title">Web Development</h4>
+                                <p class="course-instructor">Prof. Mohammad Bashar</p>
+
+                                <div class="course-btns">
+                                    <a href="course.html" class="btn btn-outline btn-sm">Manage Course</a>
+                                    <a href="course.html" class="btn btn-outline btn-sm">Disable Course</a>
+
+
+                                </div>
+
+
+                            </div>
+
+                            <!-- Course Card 2 -->
+                            <div class="course-card">
+                                <div class="course-card-header">
+                                    <span class="course-code">SOEN 287 S</span>
+                                    <span class="course-term">Winter 2026</span>
+                                </div>
+                                <h4 class="course-title">Web Development</h4>
+                                <p class="course-instructor">Prof. Mohammad Bashar</p>
+
+                                <div class="course-btns">
+                                    <a href="course.html" class="btn btn-outline btn-sm">Manage Course</a>
+                                    <a href="course.html" class="btn btn-outline btn-sm">Disable Course</a>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-card-header">
+                                    <span class="course-code">SOEN 287 S</span>
+                                    <span class="course-term">Winter 2026</span>
+                                </div>
+                                <h4 class="course-title">Web Development</h4>
+                                <p class="course-instructor">Prof. Mohammad Bashar</p>
+
+                                <div class="course-btns">
+                                    <a href="course.html" class="btn btn-outline btn-sm">Manage Course</a>
+                                    <a href="course.html" class="btn btn-outline btn-sm">Disable Course</a>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-card-header">
+                                    <span class="course-code">SOEN 287 S</span>
+                                    <span class="course-term">Winter 2026</span>
+                                </div>
+                                <h4 class="course-title">Web Development</h4>
+                                <p class="course-instructor">Prof. Mohammad Bashar</p>
+
+                                <div class="course-btns">
+                                    <a href="course.html" class="btn btn-outline btn-sm">Manage Course</a>
+                                    <a href="course.html" class="btn btn-outline btn-sm">Disable Course</a>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-card-header">
+                                    <span class="course-code">SOEN 287 S</span>
+                                    <span class="course-term">Winter 2026</span>
+                                </div>
+                                <h4 class="course-title">Web Development</h4>
+                                <p class="course-instructor">Prof. Mohammad Bashar</p>
+
+                                <div class="course-btns">
+                                    <a href="course.html" class="btn btn-outline btn-sm">Manage Course</a>
+                                    <a href="course.html" class="btn btn-outline btn-sm">Disable Course</a>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-card-header">
+                                    <span class="course-code">SOEN 287 S</span>
+                                    <span class="course-term">Winter 2026</span>
+                                </div>
+                                <h4 class="course-title">Web Development</h4>
+                                <p class="course-instructor">Prof. Mohammad Bashar</p>
+
+                                <div class="course-btns">
+                                    <a href="course.html" class="btn btn-outline btn-sm">Manage Course</a>
+                                    <a href="course.html" class="btn btn-outline btn-sm">Disable Course</a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="section-header">
+                        <h3>Hidden Courses</h3>
+                        
+                    </div>
+
+                    <div class="course-cards">
+                        <!-- Course Card 1 -->
+                        <div class="course-card">
+                            <div class="course-card-header">
+                                <span class="course-code">SOEN 287 S</span>
+                                <span class="course-term">Winter 2026</span>
+                            </div>
+                            <h4 class="course-title">Web Development</h4>
+                            <p class="course-instructor">Prof. Mohammad Bashar</p>
+
+                            <div class="course-btns">
+                                <a href="course.html" class="btn btn-outline btn-sm">Manage Course</a>
+                                <a href="course.html" class="btn btn-outline btn-sm">Enable Course</a>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+            </main>
+        </div>
+
+    </div>
+
 </body>
+
 </html>

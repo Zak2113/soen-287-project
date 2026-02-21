@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- LEFT: Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../index.html" class="brand-logo">Noodle<span class="brand-accent">.</span></a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">Dashboard</a>
+                <a href="create-course.html" class="nav-item">Create Course</a>
+                <a href="analytics.html" class="nav-item">Analytics</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <!-- Highlighted Profile as the active pseudo-tab at the bottom -->
+
+                <a href="../auth/login.html" class="nav-item">Log Out</a>
+            </div>
+        </aside>
+
+        <!-- RIGHT: Main Content Area -->
+        <div class="main-wrapper">
+
+            <!-- Top Header for User Info -->
+            <header class="top-header">
+                <div class="header-title">Admin Settings</div>
+
+                <div class="user-profile">
+                    <span class="user-name">Admin User</span>
+                    <div class="user-avatar"><a href="profile.html">SU</a></div>
+                </div>
+            </header>
+
+            <!-- Actual Page Content Goes Here -->
+            <main class="content-area">
+
+                <div class="dashboard-header">
+                    <h2>Account Settings</h2>
+                    <p>Manage your personal information and security preferences.</p>
+                </div>
+
+                <!-- Personal Information Section -->
+                <section class="profile-section">
+                    <div class="profile-header">
+                        <div class="profile-avatar-large">AU</div>
+                        <div class="profile-title">
+                            <h3>Admin User</h3>
+                        </div>
+                    </div>
+
+                    <form action="profile.html" method="POST">
+
+                        <div class="profile-grid">
+                            <div class="form-group">
+                                <label for="role" class="form-label">Role</label>
+                                <select id="role" class="form-control" required>
+                                    <option value="student">Administrator</option>
+                                    <option value="student">Professor</option>
+                                    <option value="admin">Associate Professor</option>
+                                    <option value="admin">Teaching Assistant</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="profile-grid">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" id="firstName" class="form-control" value="Admin" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" value="User" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" value="admin@university.edu">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="studentId" class="form-label">Instructor ID</label>
+                                <input type="text" id="studentId" class="form-control" value="10023456" disabled>
+                            </div>
+
+                            
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">Save Changes</button>
+                    </form>
+                </section>
+
+                <!-- Security Section -->
+                <section class="profile-section">
+                    <div class="section-header">
+                        <h3>Security & Password</h3>
+                    </div>
+
+                    <form action="profile.html" method="POST" style="margin-top: 1.5rem;">
+                        <div class="profile-grid">
+                            <div class="form-group">
+                                <label for="currentPassword" class="form-label">Current Password</label>
+                                <input type="password" id="currentPassword" class="form-control" placeholder="••••••••"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="newPassword" class="form-label">New Password</label>
+                                <input type="password" id="newPassword" class="form-control" placeholder="••••••••"
+                                    required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-outline">Update Password</button>
+                    </form>
+                </section>
+
+            </main>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

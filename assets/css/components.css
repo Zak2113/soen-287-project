@@ -110,6 +110,13 @@
     margin-bottom: 1.25rem;
 }
 
+.course-btns {
+    display: grid;
+    direction: row;
+    gap: 1rem;
+
+}
+
 .progress-info {
     display: flex;
     justify-content: space-between;
